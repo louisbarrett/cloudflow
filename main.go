@@ -22,6 +22,7 @@ var (
 	verbose   = flag.Bool("verbose", false, "Print the data to the console")
 	pretty    = flag.Bool("pretty", false, "Pretty print the JSON data as a table")
 	doctor    = flag.Bool("doctor", false, "Run the doctor to check the health of the system")
+	silent    = flag.Bool("s", false, "Silent mode")
 	logEvents = []gabs.Container{}
 	gabsData  *gabs.Container
 
@@ -139,7 +140,9 @@ func main() {
 		} else {
 
 			if !*pretty {
-				fmt.Println(string(buffer[:n]))
+				if !*silent {
+					fmt.Println(string(buffer[:n]))
+				}
 			}
 		}
 		// # Write the data to the output file

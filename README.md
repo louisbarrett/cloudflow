@@ -47,10 +47,11 @@ Cloudflow is a simple tool that listens for and logs AWS API requests made using
    - `-verbose`: Print raw data to the console.
    - `-pretty`: Display data in a formatted table on the console.
    - `-doctor`: Checks if AWS CSM environment variables are set.
+   - `-s`: Do not write to standard output
 
    **Warning** 
    When `-pretty` is not specified SessionTokens will be sent to standard output.
-   
+
 
    **Example:**
 
