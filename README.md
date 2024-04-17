@@ -17,6 +17,15 @@ Cloudflow is a simple tool that listens for and logs AWS API requests made using
 * Optionally displays data to the console in raw or formatted table view.
 * Verifies if AWS CSM is enabled on the system.
 
+### Prerequisites
+
+In order for cloudflow to receive log events the following environment variables must be set in the shell that will be making the AWS API calls.
+```
+export AWS_CSM_ENABLED=true
+export AWS_CSM_PORT=31000
+export AWS_CSM_HOST=127.0.0.1
+```
+
 ### Installation
 
 **Clone the Cloudflow repository:**
