@@ -1,4 +1,4 @@
 output.jsonl
 dist/
-.goreleaser.yml
+.goreleaser.yaml
 cloudflow
