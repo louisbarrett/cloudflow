@@ -9,7 +9,7 @@
 	 ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ ╚═╝     ╚══════╝ ╚═════╝  ╚══╝╚══╝ 
 ```																			 		
 Cloudflow is a simple tool that listens for and logs AWS API requests made using AWS Client-Side Monitoring (CSM). This allows you to analyze and debug API interactions locally.
-
+<img src=cloudflow.png>
 ### Features
 
 * Captures AWS API request data sent via CSM.
